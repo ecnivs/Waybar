@@ -1,7 +1,3 @@
-/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
-
-// ### Minimal -SHORT ### //
-
 {
 "include": "~/.config/waybar/modules",
 "layer": "top",
