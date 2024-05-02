@@ -1,0 +1,15 @@
+{
+  "include": "~/.config/waybar/modules",
+  "modules-left": [
+    "clock",
+    "temperature",
+    "hyprland/workspaces#kanji"
+  ],
+  "modules-right": [
+    "network",
+    "pulseaudio",
+    "pulseaudio#microphone",
+    "battery",
+    "custom/power"
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  
+  "hyprland/workspaces#kanji": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "format": "{icon}",
+    "persistent-workspaces": {
+      "1": [],
+      },
+    "format-icons": {
+      "1": "一",
+      "2": "二",
+      "3": "三",
+      "4": "四",
+      "5": "五",
+      "6": "六",
+      "7": "七",
+      "8": "八",
+      "9": "九",
+      "10": "十",
+    }
+  },
+  "temperature": {
+    "interval": 5,
+    "tooltip": true,
+    "hwmon-path": [
+      "/sys/class/hwmon/hwmon1/temp1_input",
+      "/sys/class/thermal/thermal_zone0/temp"
+    ],
+    //"thermal-zone": 0,
+    "critical-threshold": 82,
+    "format-critical": "{temperatureC}°C {icon}",
+    "format": "{temperatureC}°C {icon}",
+    "format-icons": [
+      "󰈸"
+    ],
+    "on-click-right": "kitty --title btop sh -c 'btop'"
+  },
+  "network": {
+    "interval": 1,
+    "format": "{ifname}",
+    "format-wifi": "{icon} {essid}",
+    "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
+    "format-disconnected": "󰤮 Disconnected", 
+    "format-linked": "{ifname} (No IP) ",
+    "tooltip-format-wifi": "{essid} {icon} {signalStrength}%",
+    "max-length": 50,
+    "format-alt": "{ipaddr}/{cidr}",
+    "on-click-right": "nm-connection-editor &",
+    "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"]
+  },
+  "pulseaudio": {
+    "on-click": "~/.config/waybar/scripts/Volume.sh --toggle",
+    "on-click-right": "pavucontrol -t 3",
+    "on-scroll-down": "pactl set-sink-volume 0 -5% && ~/.config/waybar/scripts/Volume.sh --notify",
+    "on-scroll-up": "pactl set-sink-volume 0 +5% && ~/.config/waybar/scripts/Volume.sh --notify",
+    "scroll-step": 1,
+    "format": "{icon}  {volume}%",
+    "format-bluetooth": "󰂰",
+    "format-muted": "󰖁 ",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    }
+  },
+  "clock": {
+    "interval": 1,
+    "format": " {:%I:%M %p}", // AM PM format
+    //"format": " {:%H:%M}",
+    "format-alt": " {:%I:%M %p   %Y, %d %B, %A}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "year",
+      "mode-mon-col": 3,
+      "weeks-pos": "right",
+      "on-scroll": 1,
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+      }
+    }
+  },
+
+  "pulseaudio#microphone": {
+    "format": "{format_source}",
+    "format-source": " {volume}%",
+    "format-source-muted": "",
+    "on-click": "~/.config/waybar/scripts/Volume.sh --toggle-mic",
+    "on-click-right": "pavucontrol -t 4",
+    "on-scroll-up": "~/.config/waybar/scripts/Volume.sh --mic-inc",
+    "on-scroll-down": "~/.config/waybar/scripts/Volume.sh --mic-dec",
+	  "tooltip-format": "{source_desc} | {source_volume}%",
+    "scroll-step": 5,
+  },
+  "battery": {
+    "interval": 1,
+    "align": 0,
+    "rotate": 0,
+    "full-at": 100,
+    "design-capacity": false,
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 15
+             },
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": " {capacity}%",
+        "format-alt-click": "click",
+    "format-full": "{icon} Full",
+    "format-alt": "{icon} {time}",
+    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "format-time": "{H}h {M}min",
+    "tooltip": true,
+    "tooltip-format": "{timeTo} {power}w"
+},
+  "custom/power": {
+    "format": "󰐥",
+    "on-click": "~/.config/waybar/scripts/Wlogout.sh",
+    "on-click-right": "~/.config/waybar/scripts/ChangeBlur.sh",
+    "tooltip": true
+  }
+ }
