@@ -1,1 +1,101 @@
-/home/cipher/.config/waybar/style/[Dark] Golden Noir.css
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-weight: 600;
+  font-size: 13px;
+  min-height: 0;
+}
+
+#window {
+  color: whitesmoke;
+}
+
+window#waybar {
+  background: #000;
+}
+
+#clock {
+  color: #b48ead;
+  margin-left: 10px;
+}
+#temperature {
+    color: #7287fd;
+}
+
+#temperature.critical {
+    color: #bf616a;
+}
+#workspaces {
+  background: #000;
+  margin-left: 10px;
+  padding: 0;
+}
+
+#workspaces button {
+  color: #c0caf5;
+  margin: 0;
+}
+
+#workspaces button.active {
+  color: #ff4734;
+}
+
+#workspaces button:hover {
+  background: #000000;
+  box-shadow: none;
+}
+
+#workspaces button:hover * {
+  text-decoration: underline;
+}
+
+#clock,
+#battery,
+#pulseaudio,
+#network {
+  background: #000;
+  padding: 0px 10px;
+  margin-bottom: 5px;
+  margin: 5px 0px;
+}
+
+#network {
+  color: #f7768e;
+  border-bottom: 2px solid #f7768e;
+  margin-right: 5px;
+}
+
+#pulseaudio {
+  color: #e0af68;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-bottom: 2px solid #e0af68;
+}
+
+#battery {
+  color: #9ece6a;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-bottom: 2px solid #9ece6a;
+}
+
+#battery.charging {
+  color: #9ece6a;
+  border-bottom: 2px solid #9ece6a;
+}
+
+#battery.warning:not(.charging) {
+  color: #cc3333;
+  border-bottom: 2px solid #cc3333;
+}
+
+#battery.critical:not(.charging) {
+  color: #ff3333;
+  border-bottom: 2px solid #ff3333;
+}
+
+#custom-power {
+  color: #000;
+  background: #ff4734;
+  margin: 5px 10px 5px 5px;
+  padding: 5px 10px;
+}
