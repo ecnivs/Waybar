@@ -5,14 +5,19 @@
 
 This repository holds my Waybar configuration. I'd appreciate any feedback or code reviews you might have!
 
+### Requirements
+```
+sudo pacman -Syu waybar pulseaudio pavucontrol btop
+```
+
 ### Installation
-~~~bash
+~~~
 sudo pacman -S waybar
 git clone https://github.com/ecnivs/waybar
 mv waybar ~/.config/waybar
 ~~~
 
 ### Add to Startup
-```bash
+```
 exec-once = rm ~/.nbfc_service
 ```
