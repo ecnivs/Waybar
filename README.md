@@ -4,3 +4,5 @@
 
 
 This repository holds my Waybar configuration. I'd appreciate any feedback or code reviews you might have!
+
+### NOTE: Add 'exec-once = rm ~/.nbfc_service' to Startup
