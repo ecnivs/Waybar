@@ -8,6 +8,7 @@ This repository holds my Waybar configuration. I'd appreciate any feedback or co
 ### Requirements
 ```
 sudo pacman -Syu waybar pulseaudio pavucontrol btop
+yay -S nbfc-linux
 ```
 
 ### Installation
