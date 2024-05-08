@@ -34,6 +34,7 @@
     "format-icons": [
       "󰈸"
     ],
+    "on-click": "~/.config/waybar/scripts/toggle_fan.sh",
     "on-click-right": "kitty --title btop sh -c 'btop'"
   },
   "network": {
