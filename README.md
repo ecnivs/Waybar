@@ -5,4 +5,14 @@
 
 This repository holds my Waybar configuration. I'd appreciate any feedback or code reviews you might have!
 
-### NOTE: Add 'exec-once = rm ~/.nbfc_service' to Startup
+### Installation
+~~~bash
+sudo pacman -S waybar
+git clone https://github.com/ecnivs/waybar
+mv waybar ~/.config/waybar
+~~~
+
+### Add to Startup
+```bash
+exec-once = rm ~/.nbfc_service
+```
