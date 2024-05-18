@@ -21,14 +21,15 @@ To use this Waybar configuration, you'll need the following prerequisites:
 + Install Waybar and the prerequisite packages mentioned above on your Linux system.
 + Clone this repository or download and extract the ZIP file.
 + Move the config file to ~/.config/waybar:
-`
+```
 mv config ~/.config/waybar
-`
+```
 + Add the following line to your startup applications to remove the '~/.nbfc_service' file:
 
-`
+```
 exec-once = rm ~/.nbfc_service
-`
+```
+
 ## Usage
 + Ensure Waybar is running on your system.
 + Your custom configuration will automatically be loaded.
