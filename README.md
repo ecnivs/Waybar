@@ -7,6 +7,7 @@ This repository holds my configuration for Waybar, a highly customizable and lig
 ![swappy-20240502-234137](https://github.com/ecnivs/Waybar/assets/106900369/cd266ca1-d3ac-4e13-ae44-17ff5ff98769)
 
 
+
 ## Prerequisites
 To use this Waybar configuration, you'll need the following prerequisites:
 
