@@ -40,4 +40,4 @@ Feel free to customize the config file to suit your preferences. You can modify 
 ## Acknowledgments
 Inspired by the Waybar community and contributors.
 
-### Enjoy your customized Waybar setup!
+### I'd appreciate any feedback or code reviews you might have!

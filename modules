@@ -1,5 +1,4 @@
-{
-  
+{ 
   "hyprland/workspaces#kanji": {
     "disable-scroll": true,
     "all-outputs": true,
