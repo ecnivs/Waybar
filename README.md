@@ -1,11 +1,8 @@
-# Waybar
-
-## Overview
-This repository holds my configuration for **Waybar**, a highly customizable and lightweight status bar for Linux. This configuration includes various modules and settings tailored to your needs.
+<h1 align="center">Waybar</h1>
+<p align="center"><em>My Waybar configuration</em></p>
 
 
 ![swappy-20240502-234137](https://github.com/ecnivs/Waybar/assets/106900369/cd266ca1-d3ac-4e13-ae44-17ff5ff98769)
-
 
 
 ## Prerequisites
@@ -37,4 +34,4 @@ exec-once = rm ~/.nbfc_service
 ## Customization
 Feel free to customize the config file to suit your preferences. You can modify modules, colors, fonts, and more according to your needs.
 
-### I'd appreciate any feedback or code reviews you might have!
+#### *I'd appreciate any feedback or code reviews you might have!*
