@@ -132,4 +132,4 @@
     "on-click-right": "~/.config/waybar/scripts/ChangeBlur.sh",
     "tooltip": true
   }
- }
+}
