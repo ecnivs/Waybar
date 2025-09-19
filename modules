@@ -34,7 +34,7 @@
       "󰈸"
     ],
     "on-click": "~/.config/waybar/scripts/toggle_fan.sh",
-    "on-click-right": "kitty --title btop sh -c 'btop'"
+    "on-click-right": "kitty gnome-system-monitor"
   },
   "network": {
     "interval": 1,
